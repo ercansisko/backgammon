@@ -1,0 +1,74 @@
+.grid-container{
+  width: 70vh;
+  height: 70vh;
+  display: grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:0.2vh;
+  border:2vh solid rgb(142, 93, 8);
+  border-radius: 5px;
+  background-color: rgb(46, 35, 6);
+
+}
+.bgammon{
+  position: absolute;
+
+}
+.grid-item{
+  
+  background-color: rgb(46, 35, 6);
+  display: flex;
+  flex-direction: column;
+  /* max-height: 33vh;
+  min-height: 33vh; */
+  clip-path: polygon(50%,0%,0%);
+  position: relative;
+  z-index: 1;
+  width: 4.75vh;
+}
+.grid-item:hover{
+  background-color: rgb(180, 177, 13);
+}
+.circle{
+  width: 4.5vh;
+  height: 4.5vh;
+  background-color:green;
+  border: 1px solid inherit;
+  border-radius: 2.25vh;
+  cursor: pointer;
+ z-index: 3;
+ 
+}
+.circle:hover{
+  background-color: blue !important;
+  
+ 
+}
+
+.triangle{
+  width: 4.5vh;
+  height: 25vh;
+  background-color: rgb(184, 148, 148);
+  position: absolute;
+  z-index: 2;
+  
+}
+.grid-item6{
+  margin-left:5vh !important;
+}
+.grid-item17{
+  margin-left:5vh !important;
+}
+.midline{
+  height: 66vh;
+  position: absolute;
+  width: 5vh;
+  background-color: rgb(142, 93, 8);
+  z-index: 100;
+  top:7.01vh;
+  left: 32.5vh;
+}
+.black-btn{
+  width: 33vh;
+  background-color: aqua;
+  height: 5vh;
+}
